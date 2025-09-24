@@ -19,5 +19,25 @@ I click menu Our Solutions
 
 I should be able to see section Our Solutions
     Wait Until Page Contains Element    xpath=//h3[contains(text(), 'Our Solutions')]
+    [Teardown]    Close Browser
 
+I click menu Who We Are
+    Click Element    xpath=//nav//a[@href='/who-we-are/']/p[text()='Who We Are']
 
+I should be able to see section Meet Our Founder
+    Wait Until Page Contains Element    xpath=//h1[contains(text(), 'Meet Our Founder')]
+    [Teardown]    Close Browser
+
+I click menu FAQ
+    Click Element    xpath=//nav//a[@href='/#faq']/p[text()='FAQ']
+
+I should be able to see section Frequently Asked Questions
+    Wait Until Page Contains Element    xpath=//h3[contains(text(), 'Frequently Asked Questions')]
+    [Teardown]    Close Browser
+
+I click menu Contact Us
+    Click Element    xpath=//nav//a[@href='/contact-us/']/p[text()='Contact Us']
+
+I should be able to see section Contact Us
+    Wait Until Page Contains Element    xpath=//h3[contains(text(), 'We’d love to hear ')]
+    [Teardown]    Close Browser
