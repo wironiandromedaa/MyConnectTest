@@ -39,5 +39,5 @@ I click menu Contact Us
     Click Element    xpath=//nav//a[@href='/contact-us/']/p[text()='Contact Us']
 
 I should be able to see section Contact Us
-    Wait Until Page Contains Element    xpath=//h3[contains(text(), 'We’d love to hear ')]
+    Wait Until Page Contains Element    xpath=//h3[contains(text(), 'We’d love to hear')]
     [Teardown]    Close Browser

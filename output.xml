@@ -1,102 +1,241 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.9.6 on darwin)" generated="2025-09-24T12:16:02.996699" rpa="false" schemaversion="5">
-<suite id="s1" name="01 Test Load" source="/Users/mac/MyConnect.ai/tests/01_test_load.robot">
+<robot generator="Robot 7.3.2 (Python 3.9.6 on darwin)" generated="2025-09-24T13:21:45.735438" rpa="false" schemaversion="5">
+<suite id="s1" name="01 Test Load" source="/Users/mac/Documents/Github/MyConnectTest/tests/01_test_load.robot">
 <test id="s1-t1" name="Landing Page Loads Successfully" line="8">
 <kw name="Given MyConnect.ai Web is open" owner="main_page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-24T12:16:03.107674" level="INFO">Opening browser 'chrome' to base url 'https://myconnect.ai/'.</msg>
+<msg time="2025-09-24T13:21:45.847654" level="INFO">Opening browser 'chrome' to base url 'https://myconnect.ai/'.</msg>
 <arg>${BASE_URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-24T12:16:03.107529" elapsed="1.613985"/>
+<status status="PASS" start="2025-09-24T13:21:45.847130" elapsed="4.573576"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-24T12:16:04.721953" elapsed="0.894447"/>
+<status status="PASS" start="2025-09-24T13:21:50.422605" elapsed="0.344369"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>xpath=//button[normalize-space()='Request a Demo']</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-09-24T12:16:05.619951" elapsed="0.015638"/>
+<status status="PASS" start="2025-09-24T13:21:50.767205" elapsed="0.012033"/>
 </kw>
-<status status="PASS" start="2025-09-24T12:16:03.107037" elapsed="2.528679"/>
+<status status="PASS" start="2025-09-24T13:21:45.846651" elapsed="4.932822"/>
 </kw>
 <kw name="When I click button Request Demo" owner="main_page">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-24T12:16:05.636519" level="INFO">Clicking element 'xpath=//a[@href='/request-a-demo/']/button[normalize-space()='Request a Demo']'.</msg>
+<msg time="2025-09-24T13:21:50.780578" level="INFO">Clicking element 'xpath=//a[@href='/request-a-demo/']/button[normalize-space()='Request a Demo']'.</msg>
 <arg>xpath=//a[@href='/request-a-demo/']/button[normalize-space()='Request a Demo']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-24T12:16:05.636299" elapsed="0.060199"/>
+<status status="PASS" start="2025-09-24T13:21:50.780408" elapsed="0.052659"/>
 </kw>
-<status status="PASS" start="2025-09-24T12:16:05.636020" elapsed="0.061369"/>
+<status status="PASS" start="2025-09-24T13:21:50.780036" elapsed="0.053267"/>
 </kw>
 <kw name="Then I should be landed to ${REQUEST_DEMO}" owner="main_page" source_name="I should be landed to ${REQUEST_DEMO}">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>xpath=//span[contains(., "Want to find out how MyConnect.ai can help your")]</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-09-24T12:16:05.699376" elapsed="4.102788"/>
+<status status="PASS" start="2025-09-24T13:21:50.834330" elapsed="11.688838"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-24T12:16:09.803038" elapsed="0.091652"/>
+<status status="PASS" start="2025-09-24T13:22:02.523933" elapsed="0.094051"/>
 </kw>
-<status status="PASS" start="2025-09-24T12:16:05.698576" elapsed="4.196225"/>
+<status status="PASS" start="2025-09-24T13:21:50.833776" elapsed="11.784368"/>
 </kw>
 <doc>Verify homepage loads and "Request a Demo" button navigates to request demo page</doc>
-<status status="PASS" start="2025-09-24T12:16:03.106554" elapsed="6.788467"/>
+<status status="PASS" start="2025-09-24T13:21:45.846149" elapsed="16.772350"/>
 </test>
 <test id="s1-t2" name="Verify Our Solutions Heading Exists" line="14">
 <kw name="Given MyConnect.ai Web is open" owner="main_page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-24T12:16:09.896310" level="INFO">Opening browser 'chrome' to base url 'https://myconnect.ai/'.</msg>
+<msg time="2025-09-24T13:22:02.620067" level="INFO">Opening browser 'chrome' to base url 'https://myconnect.ai/'.</msg>
 <arg>${BASE_URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-24T12:16:09.896086" elapsed="1.515259"/>
+<status status="PASS" start="2025-09-24T13:22:02.619816" elapsed="5.360216"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-24T12:16:11.411749" elapsed="0.344191"/>
+<status status="PASS" start="2025-09-24T13:22:07.980670" elapsed="0.327013"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>xpath=//button[normalize-space()='Request a Demo']</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-09-24T12:16:11.756123" elapsed="0.007939"/>
+<status status="PASS" start="2025-09-24T13:22:08.307851" elapsed="0.007096"/>
 </kw>
-<status status="PASS" start="2025-09-24T12:16:09.895797" elapsed="1.868415"/>
+<status status="PASS" start="2025-09-24T13:22:02.619498" elapsed="5.695604"/>
 </kw>
 <kw name="When I click menu Our Solutions" owner="main_page">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-24T12:16:11.767946" level="INFO">Clicking element 'xpath=//nav//a[@href='/#our-solutions']/p[text()='Our Solutions']'.</msg>
+<msg time="2025-09-24T13:22:08.315835" level="INFO">Clicking element 'xpath=//nav//a[@href='/#our-solutions']/p[text()='Our Solutions']'.</msg>
 <arg>xpath=//nav//a[@href='/#our-solutions']/p[text()='Our Solutions']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-24T12:16:11.767727" elapsed="0.043184"/>
+<status status="PASS" start="2025-09-24T13:22:08.315683" elapsed="0.061471"/>
 </kw>
-<status status="PASS" start="2025-09-24T12:16:11.766714" elapsed="0.044362"/>
+<status status="PASS" start="2025-09-24T13:22:08.315394" elapsed="0.061858"/>
 </kw>
 <kw name="Then I should be able to see section Our Solutions" owner="main_page">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>xpath=//h3[contains(text(), 'Our Solutions')]</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-09-24T12:16:11.811701" elapsed="0.005785"/>
+<status status="PASS" start="2025-09-24T13:22:08.377673" elapsed="0.005492"/>
 </kw>
-<status status="PASS" start="2025-09-24T12:16:11.811470" elapsed="0.006103"/>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-24T13:22:08.383400" elapsed="0.077352"/>
+</kw>
+<status status="PASS" start="2025-09-24T13:22:08.377450" elapsed="0.083402"/>
 </kw>
 <doc>Verify "Our Solutions" section is visible on homepage</doc>
-<status status="PASS" start="2025-09-24T12:16:09.895272" elapsed="1.922444"/>
+<status status="PASS" start="2025-09-24T13:22:02.618744" elapsed="5.842247"/>
 </test>
-<status status="PASS" start="2025-09-24T12:16:02.997641" elapsed="8.820549"/>
+<test id="s1-t3" name="Verify Who We Are Heading Exists" line="20">
+<kw name="Given MyConnect.ai Web is open" owner="main_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-24T13:22:08.461952" level="INFO">Opening browser 'chrome' to base url 'https://myconnect.ai/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-24T13:22:08.461798" elapsed="3.232100"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-24T13:22:11.694258" elapsed="0.343308"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//button[normalize-space()='Request a Demo']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-24T13:22:12.037892" elapsed="0.006632"/>
+</kw>
+<status status="PASS" start="2025-09-24T13:22:08.461587" elapsed="3.583043"/>
+</kw>
+<kw name="When I click menu Who We Are" owner="main_page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T13:22:12.045239" level="INFO">Clicking element 'xpath=//nav//a[@href='/who-we-are/']/p[text()='Who We Are']'.</msg>
+<arg>xpath=//nav//a[@href='/who-we-are/']/p[text()='Who We Are']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T13:22:12.045097" elapsed="0.043488"/>
+</kw>
+<status status="PASS" start="2025-09-24T13:22:12.044867" elapsed="0.044036"/>
+</kw>
+<kw name="Then I should be able to see section Meet Our Founder" owner="main_page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//h1[contains(text(), 'Meet Our Founder')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-24T13:22:12.089676" elapsed="10.601767"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-24T13:22:22.692236" elapsed="0.078462"/>
+</kw>
+<status status="PASS" start="2025-09-24T13:22:12.089429" elapsed="10.681356"/>
+</kw>
+<doc>Verify "Who We Are" section is visible on homepage</doc>
+<status status="PASS" start="2025-09-24T13:22:08.461198" elapsed="14.309727"/>
+</test>
+<test id="s1-t4" name="Verify FAQ Heading Exists" line="26">
+<kw name="Given MyConnect.ai Web is open" owner="main_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-24T13:22:22.771808" level="INFO">Opening browser 'chrome' to base url 'https://myconnect.ai/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-24T13:22:22.771651" elapsed="3.147625"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-24T13:22:25.919958" elapsed="0.335235"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//button[normalize-space()='Request a Demo']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-24T13:22:26.256194" elapsed="0.006638"/>
+</kw>
+<status status="PASS" start="2025-09-24T13:22:22.771452" elapsed="3.491537"/>
+</kw>
+<kw name="When I click menu FAQ" owner="main_page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T13:22:26.263856" level="INFO">Clicking element 'xpath=//nav//a[@href='/#faq']/p[text()='FAQ']'.</msg>
+<arg>xpath=//nav//a[@href='/#faq']/p[text()='FAQ']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T13:22:26.263647" elapsed="0.049923"/>
+</kw>
+<status status="PASS" start="2025-09-24T13:22:26.263351" elapsed="0.050324"/>
+</kw>
+<kw name="Then I should be able to see section Frequently Asked Questions" owner="main_page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//h3[contains(text(), 'Frequently Asked Questions')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-24T13:22:26.314455" elapsed="0.013989"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-24T13:22:26.328680" elapsed="0.077726"/>
+</kw>
+<status status="PASS" start="2025-09-24T13:22:26.314034" elapsed="0.092462"/>
+</kw>
+<doc>Verify "FAQ" section is visible on homepage</doc>
+<status status="PASS" start="2025-09-24T13:22:22.771110" elapsed="3.635536"/>
+</test>
+<test id="s1-t5" name="Verify Contact Us Heading Exists" line="32">
+<kw name="Given MyConnect.ai Web is open" owner="main_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-24T13:22:26.407613" level="INFO">Opening browser 'chrome' to base url 'https://myconnect.ai/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-24T13:22:26.407445" elapsed="3.645818"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-24T13:22:30.053662" elapsed="0.334464"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//button[normalize-space()='Request a Demo']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-24T13:22:30.388297" elapsed="0.006560"/>
+</kw>
+<status status="PASS" start="2025-09-24T13:22:26.407243" elapsed="3.987722"/>
+</kw>
+<kw name="When I click menu Contact Us" owner="main_page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T13:22:30.395552" level="INFO">Clicking element 'xpath=//nav//a[@href='/contact-us/']/p[text()='Contact Us']'.</msg>
+<arg>xpath=//nav//a[@href='/contact-us/']/p[text()='Contact Us']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T13:22:30.395420" elapsed="0.037885"/>
+</kw>
+<status status="PASS" start="2025-09-24T13:22:30.395197" elapsed="0.038207"/>
+</kw>
+<kw name="Then I should be able to see section Contact Us" owner="main_page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//h3[contains(text(), 'We’d love to hear ')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-24T13:22:30.434322" elapsed="10.423069"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-24T13:22:40.858038" elapsed="0.080183"/>
+</kw>
+<status status="PASS" start="2025-09-24T13:22:30.433865" elapsed="10.504442"/>
+</kw>
+<doc>Verify "Contact Us" section is visible on homepage</doc>
+<status status="PASS" start="2025-09-24T13:22:26.406857" elapsed="14.531611"/>
+</test>
+<status status="PASS" start="2025-09-24T13:21:45.736148" elapsed="55.202695"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="01 Test Load" id="s1" pass="2" fail="0" skip="0">01 Test Load</stat>
+<stat name="01 Test Load" id="s1" pass="5" fail="0" skip="0">01 Test Load</stat>
 </suite>
 </statistics>
 <errors>
